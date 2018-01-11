@@ -43,7 +43,7 @@ node() {
          print "Environment will be : ${env.NODE_ENV}"
 
          sh '/usr/local/bin/node -v'
-         sh 'PATH="$PATH:/usr/local/bin'
+         sh 'PATH="$PATH:/usr/local/bin"'
          sh 'env'
          sh '/usr/local/bin/npm prune'
          sh '/usr/local/bin/npm install'
