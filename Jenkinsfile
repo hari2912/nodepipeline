@@ -42,16 +42,16 @@ node() {
 
          print "Environment will be : ${env.NODE_ENV}"
 
-         sh 'node -v'
-         sh 'npm prune'
-         sh 'npm install'
-         sh 'npm test'
+         sh '/usr/local/bin/node -v'
+         sh '/usr/local/bin/npm prune'
+         sh '/usr/local/bin/npm install'
+         sh '/usr/local/bin/npm test'
 
        }
 
        stage('Build Docker'){
 
-            sh './dockerBuild.sh'
+            sh "echo 'Build'"
        }
 
        stage('Deploy'){
