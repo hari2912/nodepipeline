@@ -51,7 +51,7 @@ node() {
 
        stage('Build Docker'){
 
-            sh "echo 'Build'"
+            sh 'echo "Build"'
        }
 
        stage('Deploy'){
