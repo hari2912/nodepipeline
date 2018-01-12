@@ -41,10 +41,7 @@ node() {
          env.NODE_ENV = "test"
 
          print "Environment will be : ${env.NODE_ENV}"
-
-         sh '/usr/local/bin/node -v'
-         sh 'export PATH="$PATH:/usr/local/bin"'
-         sh 'env'
+               
          sh '/usr/local/bin/npm prune'
          sh '/usr/local/bin/npm install'
          sh '/usr/local/bin/npm test'
@@ -53,7 +50,7 @@ node() {
 
        stage('Build Docker'){
 
-            sh 'docker build . -t pipeline'
+            sh 'npm start'
        }
 
        stage('Deploy'){
