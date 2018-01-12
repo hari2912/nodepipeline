@@ -50,7 +50,7 @@ node() {
 
        stage('Build Docker'){
 
-            sh 'npm start'
+            sh 'nohup npm start &'
        }
 
        stage('Deploy'){
