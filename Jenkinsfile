@@ -50,7 +50,8 @@ node() {
 
        stage('Build Docker'){
 
-            sh 'nohup npm start &'
+            sh 'oc login -u system:admin -n pipeline'
+            sh 'oc start-build pipeline'
        }
 
        stage('Deploy'){
