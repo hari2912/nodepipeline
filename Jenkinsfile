@@ -50,8 +50,8 @@ node() {
 
        stage('Build Docker'){
 
-            sh 'oc login -u system:admin -n pipeline'
-            sh 'oc start-build pipeline'
+            sh '/Users/ananthfrancis/Downloads/openshift-origin-client-tools-v3/oc login -u system:admin -n pipeline'
+            sh '/Users/ananthfrancis/Downloads/openshift-origin-client-tools-v3/oc start-build pipeline'
        }
 
        stage('Deploy'){
