@@ -42,9 +42,9 @@ node() {
 
          print "Environment will be : ${env.NODE_ENV}"
                
-         sh '/usr/local/bin/npm prune'
-         sh '/usr/local/bin/npm install'
-         sh '/usr/local/bin/npm test'
+         sh 'npm prune'
+         sh 'npm install'
+         sh 'npm test'
 
        }
 
