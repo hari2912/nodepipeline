@@ -50,8 +50,8 @@ node() {
 
        stage('Build Docker'){
 
-            sh '/Users/ananthfrancis/Downloads/openshift-origin-client-tools-v3/oc login -u system:admin -n pipeline'
-            sh '/Users/ananthfrancis/Downloads/openshift-origin-client-tools-v3/oc start-build pipeline'
+            sh 'C:\Users\Torqu\.minishift\cache\oc\v3.6.1\windows\oc login -u system:admin -n pipeline'
+            sh 'C:\Users\Torqu\.minishift\cache\oc\v3.6.1\windows\oc start-build pipeline'
        }
 
        stage('Deploy'){
